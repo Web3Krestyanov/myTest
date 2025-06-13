@@ -1,30 +1,23 @@
-# Mission 2
+# Mission 3
+Папка с видео:
+https://drive.google.com/drive/folders/1S2o1NhtRDVkW_UeOGLfwRa_N0o6ea2Z7?usp=sharing
 
-## Part 0
-![image](https://github.com/user-attachments/assets/10b21040-42c3-4014-a228-9122efccdfa8)
+Нужно написать query для:
 
-[Link to video](https://www.youtube.com/watch?v=UUhavvMO2FQ)
+1. получить список юзернеймов пользователей
+  ![image](https://github.com/user-attachments/assets/a25c9808-5ac6-4af4-a5e3-0b27d5f157b6)
 
-## Part1
+2. получить кол-во отправленных сообщений каждым пользователем:
+    
+    username - number of sent messages
+    ![image](https://github.com/user-attachments/assets/69b65bb3-e0d5-4f39-a116-91c2ba0a7ef2)
 
-**Вопрос 1.** Зачем нужен ssh? Ответ на пару предложений.
-SSH - протокол для бузопсного подключения к удалённому серверу
-**Вопрос 2.** Предположим, у вас есть прямой доступ к серверу(терминалу) под управлением ubuntu. У вас есть коллега Вася, который хочет получить доступ к этому серверу. Он генерирует пару ssh ключей с помощью команды ssh-keygen и дает вам свой публичный ключ. В какой файл на сервере нужно записать ключ, чтобы Вася смог подключиться к терминалу сервера?
-В файл с доверенными публичными ключами какая-набудь trust_key 
-**Вопрос 3.**  Тут вопрос про АПИ. Разберитесь, что такое long polling и webhooks, опишите сами в нескольких предложениях, как они работают.
-При long polling пользователь отправляет запрос и ждет ответа в другом случае сервер сам отправляет зопрос при выполнении определённых условий.
+3. Получить пользователя с самым большим кол-вом полученных сообщений и само количество
+    
+    username - number of received messages
+    ![image](https://github.com/user-attachments/assets/df0a241c-1aa9-435f-83d3-68ad99eeb040)
 
-https://grammy.dev/guide/deployment-types
+4. Получить среднее кол-во сообщений, отправленное каждым пользователем
+![image](https://github.com/user-attachments/assets/971718a2-8a3f-4535-8d6b-a2f552d1d7e8)
 
-**Вопрос 4.** Найдите информацию, что такое issues на гитхабе и для чего нужны. Также вставьте ссылки на пару примеров issues в популярных open source проектах.
-Это нужно для отслеживания задач в репозиториях, можно сообщить о баге или организовать работу
-https://github.com/facebook/react/issues
-https://github.com/sindresorhus/awesome/issues
-**Вопрос 5.** Ваш проект используется пустую папку images, но гит не поддерживает отслеживание пустых директорий. Что делать?
-Можно использовать заглушку images/.gitkeep
-# Heading1  
-## Heading2  
-### Heading3  
-**Bold** andibold
-Tut izmeneniya
-Izmeneniya iz Terminal
+В ответе написать использованные sql queries, обернуть их соответствующим markdown стилем
